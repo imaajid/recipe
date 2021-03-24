@@ -4,7 +4,7 @@
 error_reporting(0);
 	// Database connectivity
 session_start();
-$con=mysqli_connect('localhost','root','','recipes');
+$con=mysqli_connect('localhost','root','','recipe');
 
 // Debug
 function _t($data){

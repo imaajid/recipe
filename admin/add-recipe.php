@@ -19,6 +19,7 @@
 								$data['videourl']=$_POST['videourl'];
 								$image=$_FILES['image']['name'];
 								$tmpimage=$_FILES['image']['tmp_name'];
+								
 								$rename=time().'_'.$_FILES['image']['name'];
 								if(move_uploaded_file($tmpimage,'upload/'.$rename)){
 									$data['image']=$rename;
